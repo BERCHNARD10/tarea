@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Minimalista con CSS Puro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title">Presiona el modal papu :)</h2>
+    <button class="button" id="openModal">Abrir Modal</button>
+</div>
+
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p class="modal-text">Hola!... Mi nombre es Bernardino Alvarado Hernandez</p>
+        <center>        
+            <img src="{{ url_for('static', filename='men.png') }}" alt="Imagen de un hombre" height="300">
+        </center>
+        <a href="https://www.freepik.es/foto-gratis/mono-enviando-beso_1200443.htm#fromView=search&page=1&position=47&uuid=a2ac2db6-c494-43c2-90ef-648bcc38a5b5">Imagen de luis_molinero en Freepik</a>
+
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
